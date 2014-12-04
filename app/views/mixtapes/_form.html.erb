@@ -1,0 +1,17 @@
+<%= form_for @mixtape do |m| %>
+  <div id="form_field">
+    <%= m.label :name %>
+    <%= m.text_field :name %>
+  </div>
+  <div id="form_field">
+    <%= m.label :description %>
+    <%= m.text_area :description %>
+  </div>
+  <div id="form_field">
+    <%= m.label :song_ids, "Songs" %>
+    <%= m.collection_check_boxes :song_ids, Song.all, :id, :name %>
+  </div>
+  <div id="form_action">
+    <%= m.submit %>
+  </div>
+<% end %>

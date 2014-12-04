@@ -1,0 +1,14 @@
+<h1>Artists of Tunr</h1>
+
+<% if user_signed_in? && current_user.admin? %>
+  <p><%= link_to "Add Artist", new_artist_path, calss: 'button' %></p>
+<% end %>
+
+
+<% @artists.each do |artist| %>
+<div class="artist">
+  <li><%= link_to artist.name, artist %></li>
+</div>
+<% end %>
+
+

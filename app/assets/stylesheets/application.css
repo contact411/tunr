@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require reset
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  font-family: 'Righteous', cursive;
+  padding: 100px;
+}
+
+h1 { 
+font-weight: 400;
+font-size: 40px; 
+}
+
+body {background: #cccccc;
+}
+
+ul {
+  list-style: none;
+}
+form {
+  border: 1px;
+  border-color: black;  
+  font-family: tahoma;
+  margin-left: 70px;
+}
+
+
+#links {
+  font-family: tahoma;
+  font-size: 16px;
+  margin-left: 70px;  
+}
+
+#add_link {
+  font-family: tahoma;
+  font-size: 14px;
+  border: 2px solid;
+  box-shadow: 10px 10px 5px #888888;
+  width: 125px;
+  float: left;
+  margin: 30px 100px 0px 220px;
+  text-align: center;
+}
+
+#add_form {
+  border: 1px;
+  border-color: black;  
+  font-family: tahoma;
+  font-size:110%;
+  border: 2px solid;
+  box-shadow: 10px 10px 5px #888888;
+  width: 250px;
+  padding: 10px;
+  margin-left: 90px;
+}

@@ -1,0 +1,14 @@
+<h1> Song Show Page </h1>
+
+<h2> <%= @song.name %> </h2>
+<ul>
+  <li>Year: <%= @song.year %></li>
+  <li>Genre: <%= @song.genre %></li>
+  <li>Duration: <%= @song.duration %></li>
+  <li>Artist ID: <%= @song.artist_id %></li>
+</ul>
+
+<% if user_signed_in? && current_user.admin? %>
+<%= link_to "Edit", edit_song_path(@song) %>
+<%= link_to "Destroy", @song, method: :delete, data: { confirm: 'Are you sure?'} %>
+<% end %>

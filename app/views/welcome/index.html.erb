@@ -1,0 +1,9 @@
+<h2>Welcome to Tunr!</h2>
+
+<h3>Recent mixes:</h3>
+<% @mixtapes.each do |mixtape| %>
+<div class="mixtape">
+  <h3><%= mixtape.name %></h3>
+  <p><%= mixtape.description.truncate(100) %></p>
+</div>
+<% end %>

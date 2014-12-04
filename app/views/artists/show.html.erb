@@ -1,0 +1,15 @@
+<h1> Show Page </h1>
+
+<h2> <%= @artist.name %> </h2>
+
+
+<ul>
+  <li>Hometown: <%= @artist.hometown %></li>
+  <li>Label: <%= @artist.label %></li>
+  <p>Bio: <%= @artist.bio %></p>
+</ul>
+
+<% if user_signed_in? && current_user.admin? %>
+<%= link_to "Edit", edit_artist_path(@artist) %>
+<%= link_to "Destroy", @artist, method: :delete, data: { confirm: 'Are you sure?'} %>
+<% end %>
