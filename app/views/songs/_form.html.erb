@@ -19,6 +19,10 @@
   <%= s.label :artist_id %>
   <%= s.collection_select :artist_id, Artist.all, :id, :name %></p>
   <p>
+  <%= s.label :url %>
+  <%= s.url_field :url %>
+  </p>
+  <p>
   <%= s.submit %>
   </p>
 <% end %>

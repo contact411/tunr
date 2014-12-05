@@ -6,6 +6,7 @@
   <li>Genre: <%= @song.genre %></li>
   <li>Duration: <%= @song.duration %></li>
   <li>Artist ID: <%= @song.artist_id %></li>
+  <li><%= render 'shared/soundcloud', track_id: @song.soundcloud_id %></li>
 </ul>
 
 <% if user_signed_in? && current_user.admin? %>
