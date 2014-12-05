@@ -13,7 +13,7 @@ config.action_mailer.smtp_settings = {
 
 
 
-config.action_mailer.default_url_options = { host: 'http://fierce-gorge-5903.herokuapp.com/' }
+config.action_mailer.default_url_options = { host: 'fierce-gorge-5903.herokuapp.com/' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
