@@ -46,7 +46,7 @@ private
     if current_user.admin?
       @mixtape = Mixtape.find(params[:id])
     else
-      @mixtape = current_user.mistapes.find(params[:id])
+      @mixtape = current_user.mixtapes.find(params[:id])
     end
   end
 
